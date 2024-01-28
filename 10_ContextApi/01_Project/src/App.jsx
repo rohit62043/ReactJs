@@ -1,10 +1,16 @@
 import './App.css'
+import Login from './Components/Login'
+import User from './Components/User'
+import UserContextProvider from './Context/UserContextProvider'
 
 function App() {
 
 
   return (
-    <div>Hello</div>
+    <UserContextProvider>
+      <Login />
+      <User />
+    </UserContextProvider>
   )
 }
 
